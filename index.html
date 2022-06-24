@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test-task</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Serif+Pro:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="header-title">CONTACT</h1>
+    </header>
+    <main class="main">
+      <div class="map-container">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23853.189145812346!2d41.6163928!3d41.6417255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678645e78b76fd%3A0xf789749fd89a4e24!2sMiracle%20Park!5e0!3m2!1sru!2sge!4v1655971679218!5m2!1sru!2sge" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="form-container">
+        <div class="form-part">
+          <h3 class="form-title">GET IN TOUCH</h3>
+          <p class="form-subtitle">We are always happy to make valuable new contacts.</p>
+          <form action="/" class="form" name="form">
+            <div class="name-email-container">
+              <div class="input-block">
+                <label for="name" class="label">Name</label>
+                <input type="text" id="name" class="input" required>
+                <div class="validation-field">Insert your name</div>
+              </div>
+              <div class="input-block">
+                <label for="email" class="label">E-mail</label>
+                <input type="email" id="email" class="input" required>
+                <div class="validation-field">Insert correct E-mail</div>
+              </div>
+            </div>
+            <div class="input-block">
+              <label for="message" class="label">Message</label>
+              <textarea id="message" cols="30" rows="1" maxlength="100" class="textarea" required></textarea>
+              <div class="validation-field">Insert your message</div>
+              <div class="value-field"></div>
+            </div>
+            <button class="send-btn">Send</button>
+          </form>
+        </div>
+        <div class="info-part">
+          <h3 class="info-title">CONTACT INFORMATION</h3>
+          <button class="info-btn"><span>i</span></button>
+          <p class="info-subtitle">Click to view</p>
+          <div class="link-container">
+            <button class="link"><a href="#" class="social-link chrome-link"></a></button>
+            <button class="link"><a href="#" class="social-link facebook-link"></a></button>
+            <button class="link"><a href="#" class="social-link twitter-link"></a></button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div>Artem Haurylenka</div>
+      <div>RSSchool</div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
