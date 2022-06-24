@@ -56,6 +56,7 @@ h1, h3, p {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  position: relative;
   color: #fff;
   background-color: rgb(0, 180, 224);
 }
@@ -102,7 +103,7 @@ h1, h3, p {
 
 .social-link {
   display: block;
-  background-image: url(./chrome.svg);
+  background-image: url(.//assets/chrome.svg);
   background-size: 15px 15px;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,13 +112,48 @@ h1, h3, p {
 }
 
 .facebook-link {
-  background-image: url(./facebook.svg);
+  background-image: url(./assets/facebook.svg);
 }
 
 .twitter-link {
-  background-image: url(./twitter.svg);
+  background-image: url(.//assets/twitter.svg);
 }
 
+.clear-btn {
+  position: absolute;
+  top: -20px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.line {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  background: rgb(0, 180, 224);
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+
+.line:last-child {
+  transform: rotate(-45deg);
+}
+
+.clear-btn.refresh .line {
+  transform: rotate(135deg)
+}
+
+.clear-btn.refresh .line:last-child {
+  transform: rotate(225deg)
+}
 
 .form-part {
   display: flex; 
