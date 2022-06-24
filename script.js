@@ -28,6 +28,7 @@ formElements.forEach(el => el.children[1].addEventListener('input', validateElem
 const message = document.querySelector('#message')
 const symbolCounter = document.querySelector('.value-field')
 const maxLength = message.maxLength;
+
 const updateCounter = (e) => {
   const len = e ? e.target.value.length : 0;
   symbolCounter.style.background = `linear-gradient(to right, rgb(0, 180, 224) 0%, rgb(0, 180, 224) ${len}%, rgba(172, 172, 172, 0.3) ${len}%, rgba(172, 172, 172, 0.3) 100%)`;
@@ -35,3 +36,15 @@ const updateCounter = (e) => {
 
 message.addEventListener('keyup', updateCounter);
 message.addEventListener('keydown', updateCounter);
+
+
+const clearBtn = document.querySelector('.clear-btn')
+
+function clearFields() {
+  formElements.forEach(el => el.children[1].value = '')
+  validationFields.forEach(el => el.classList.remove('active'))
+  symbolCounter.style.background = 'rgba(172, 172, 172, 0.3)'
+  clearBtn.classList.toggle('refresh')
+}
+
+clearBtn.addEventListener('click' , clearFields)
